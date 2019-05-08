@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-11 col-sm-10 mx-auto">
+          <h1>"Hola mundo!"</h1>
+          <div id="cuestiones">
+          </div>
+        </div>
+      </div>
+    </div>
+      <select id="menu" onchange="location=this.value;">
+        <option value="index.html">uno</option>
+        <option value="dos.html">dos</option>
+        <option value="tres.html" selected>tres</option>
+    </select>
+    <!-- a la versión jquery.slim.min.js le faltan algunas cosas que necesitaremos-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- después de jQuery viene Popper.js y luego Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- después de ir por las bibliotecas, puedes aprovecharlas-->
+    <script>
+      var a = ["Hola mundo!","Adios mundo cruel!"]
+      var b = {saludo:["Hola mundo!", "Holiwis mundiwi!"], despedida:"Adios mundo cruel!"}
+    var c=[
+    {saludo:"hola mundo",chroma:"red"},
+    {saludo:"hola",chroma:"blue"},
+    {saludo:"h...",chroma:"green"}
+    ]
+    var curso = [
+{nombre: "Vania Solis",
+ingreso: 2015,
+trabajos:[
+{titulo: "",imagen:"https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/36789525_1760551313999908_7713065259870715904_n.jpg?_nc_cat=109&_nc_ht=scontent-scl1-1.xx&oh=f7d915dad527833cec7393728c7c696f&oe=5D5C1BE7"},
+{titulo: "",imagen:"https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/36780609_1760551380666568_8582034888717238272_n.jpg?_nc_cat=109&_nc_ht=scontent-scl1-1.xx&oh=e32eff28e8e197eacfa45eb7c7e6fec8&oe=5D5949B0"},
+{titulo: "",imagen:"https://scontent-scl1-1.xx.fbcdn.net/v/t1.0-9/18447404_1163379180456824_857015886104858150_n.jpg?_nc_cat=107&_nc_eui2=AeEEYOrDh63WPempXYCO9kQGenqsAph7I4-dquy08Fwd02XQ3S2O-BWhiwn375Z_Bmnd7vJBOOQe4wznLbG4zzOKsJjFzIqpcIQEJk0f6VyICQ&_nc_ht=scontent-scl1-1.xx&oh=ca0d2c77096867709346e1af08651858&oe=5D5D43AB"},
+{titulo: "",imagen:"https://raw.githubusercontent.com/vaniacarolina/clase-9/gh-pages/img/carmelo.jpg"}
+]}
+    ]
+      $("#cuestiones").append('<h2>' +curso[0].nombre+'</h2>').append('<h4>' + curso[0].
+      ingreso + '</h4>').append('<img src="' + curso [0].trabajos[0].imagen + '">');
+    </script>
+  </body>
+</html>
