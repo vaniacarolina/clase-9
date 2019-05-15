@@ -40,9 +40,9 @@
     $.getJSON( "https://raw.githubusercontent.com/profesorfaco/dno037-2019/gh-pages/portfolio.json", function( curso ) {
 
     $.each(curso, function(i, integrante) {
-         $("#cuestiones").append("<h2 class= 'mt-5  text-danger'> " + integrante.nombre + "</h2>");
+         $("#cuestiones").append("<h2 class= 'mt-5 '> " + integrante.nombre + "</h2>");
        $.each(integrante.trabajos, function(i, trabajo) {
-           $("#cuestiones").append("<h5 class= 'border-top my-2 py-3 pl-2 bg-color text-light'>" + trabajo.titulo + "</h5>").append("<p>" + trabajo.descriptor +"</p>").append("<img src='" + trabajo.imagen + "'class='img-fluid'>");
+           $("#cuestiones").append("<h5 class= 'border-top my-2 py-3 pl-2 bg-color '>" + trabajo.titulo + "</h5>").append("<p>" + trabajo.descriptor +"</p>").append("<img src='" + trabajo.imagen + "'class='img-fluid'>");
 
        });
      });

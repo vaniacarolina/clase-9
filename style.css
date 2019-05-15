@@ -1,19 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|PT+Serif:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|PT+Serif:700');
 
-html, body{
-min-height: 100%;
-
+html,body{
+	min-height:100%;
 }
+
+
+
 body{
-	background: rgb(238, 216, 139,1);
+
+	background:	linear-gradient(#E5BA58,#EFE8E0);
+	background-attachment: fixed;
+}
+h1 {font-family: 'PT Serif', serif;
+ font-weight: 700;
+  padding-top: 2.5rem;
+	color:#212633  ;
+
 }
 
-h1, h2 {font-family: 'PT Serif', serif;
+h2 {font-family: 'PT Serif', serif;
+ font-weight: 700;
   padding-top: 3.5rem;
+color:#47484B  ;
+
 }
 
-h5, p {font-family: 'Open Sans', sans-serif;}
+h5 {font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+	color:rgba(237, 234, 217, 1);
+}
 
+p {font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+padding-top: 0.5rem;}
+
+img {
+	border:5px solid #EFE8E0;
+
+}
 
 #menu{
 	position: fixed;
@@ -22,5 +46,6 @@ h5, p {font-family: 'Open Sans', sans-serif;}
 }
 
 .bg-color{
-	background: rgba( 54, 59, 71 , 1);
+	background: rgba( 196, 138, 120 , 1);
+
 }
